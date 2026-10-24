@@ -26,7 +26,7 @@ Requires `@earendil-works/pi-coding-agent` as the host (declared in `peerDepende
 ## Usage
 
 ```sh
-pi --override-agents ./MAESTRO_AGENTS.md
+pi --override-agents ./SOME_AGENTS.md
 ```
 
 - Relative paths resolve against the current working directory.
