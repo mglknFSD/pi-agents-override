@@ -1,0 +1,18 @@
+{
+  "name": "pi-override-agents",
+  "version": "1.0.0",
+  "description": "Pi extension: override project context (AGENTS.md/CLAUDE.md) with a custom markdown file via --override-agents",
+  "license": "ISC",
+  "type": "commonjs",
+  "keywords": ["pi-package"],
+  "pi": {
+    "extensions": ["./extensions/override-agents.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.86.1",
+    "typescript": "^5.6.0"
+  }
+}
