@@ -15,7 +15,7 @@ touching the repo's actual `AGENTS.md`.
 pi install npm:pi-override-agents
 
 # from git
-pi install git:github.com/<you>/pi-agents-override
+pi install git:github.com/mglknFSD/pi-agents-override
 
 # from a local path
 pi install ./pi-agents-override
@@ -78,6 +78,19 @@ pi --extension ./e2e/verify-context.ts --override-agents ./e2e/MAESTRO_AGENTS.md
 The printed `systemPrompt` should contain `MAESTRO_OVERRIDE_CONTEXT_12345` and **not** the
 default `AGENTS.md` content (marker `DEFAULT_AGENTS_CONTEXT_67890`).
 
+## Publish
+
+This package is listed on [pi.dev/packages](https://pi.dev/packages) when published to npm with the `pi-package` keyword and a valid `pi` manifest (already configured in `package.json`).
+
+```sh
+npm login
+npm run typecheck
+npm pack --dry-run   # should list only extensions/, README.md, LICENSE
+npm publish
+```
+
+After publish, install with `pi install npm:pi-override-agents`.
+
 ## License
 
-ISC
+ISC — see [LICENSE](./LICENSE).

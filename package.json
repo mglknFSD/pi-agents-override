@@ -4,7 +4,30 @@
   "description": "Pi extension: override project context (AGENTS.md/CLAUDE.md) with a custom markdown file via --override-agents",
   "license": "ISC",
   "type": "commonjs",
-  "keywords": ["pi-package"],
+  "author": "Vladimir <imglknz@gmail.com>",
+  "homepage": "https://pi.dev/packages/pi-override-agents",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mglknFSD/pi-agents-override.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mglknFSD/pi-agents-override/issues"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi-coding-agent",
+    "agents-md",
+    "claude-md"
+  ],
+  "files": [
+    "extensions",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
   "pi": {
     "extensions": ["./extensions/override-agents.ts"]
   },
